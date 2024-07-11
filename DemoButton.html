@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Button</title>
+    <style>
+        .call-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .call-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="call-button" id="callButton">Call Us</button>
+
+    <script>
+        document.getElementById('callButton').addEventListener('click', function () {
+            var phoneNumber = '123456789'; // Thay thế số điện thoại của bạn ở đây
+            window.location.href = 'tel:' + phoneNumber;
+        });
+    </script>
+</body>
+
+</html>
